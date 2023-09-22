@@ -35,12 +35,12 @@ android_library(
 
 android_build_config(
     name = "build_config",
-    package = "com.awesomeproject",
+    package = "ro.myvodafone.codepush",
 )
 
 android_resource(
     name = "res",
-    package = "com.awesomeproject",
+    package = "ro.myvodafone.codepush",
     res = "src/main/res",
 )
 

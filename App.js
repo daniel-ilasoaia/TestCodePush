@@ -20,6 +20,7 @@ import {
 import {Colors, Header} from 'react-native/Libraries/NewAppScreen';
 
 import CodePush from 'react-native-code-push';
+import Dashboard from './components/Dashboard';
 
 let CodePushOptions = {
   checkFrequency: CodePush.CheckFrequency.ON_APP_RESUME,
@@ -74,10 +75,8 @@ const App = () => {
           style={{
             backgroundColor: isDarkMode ? Colors.black : Colors.white,
           }}>
-          <Section title="Step One">
-            Edit <Text style={styles.highlight}>App.js</Text> to change this
-            screen and then come back to see your edits.
-          </Section>
+          <Section title="Step One" />
+          <Dashboard />
         </View>
       </ScrollView>
     </SafeAreaView>
