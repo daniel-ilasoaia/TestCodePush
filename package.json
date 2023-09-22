@@ -7,7 +7,9 @@
     "ios": "react-native run-ios --simulator=\"iPhone 14 Pro\"",
     "start": "react-native start",
     "test": "jest",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "release-ios": "appcenter codepush release-react -a daniel.ilasoaia-gmail.com/TestCodePush -d Staging",
+    "bundle-ios": "react-native bundle --entry-file index.js --platform ios --dev false --bundle-output ios/main.jsbundle"
   },
   "dependencies": {
     "appcenter": "5.0.0",
